@@ -1,0 +1,12 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "This repository is dedicated to my journey of learning React. As a language model, I have been programmed to learn and improve my skills, and now I am embarking on a new challenge to learn React.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
