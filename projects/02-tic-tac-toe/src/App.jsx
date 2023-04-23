@@ -1,46 +1,20 @@
-import { useState } from "react";
 import "./App.css";
-import { Square } from "./components/Square/Square";
-
-const TURNS = {
-  X: "X",
-  O: "O",
-};
-
-const WINNER_COMBINATIONS = [
-  // Horizontal
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-
-  // Vertical
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8],
-
-  // Diagonal
-  [0, 4, 8],
-  [2, 4, 6],
-];
-
+import { checkEndGame, checkWinner } from "./utils/board.js";
+import { GameBoard } from "./components/GameBoard.jsx";
+import { TurnDisplay } from "./components/TurnDisplay.jsx";
+import { TURNS } from "./constans.js";
+import { useState } from "react";
+import { WinnerModal } from "./components/WinnerModal.jsx";
+import confetti from "canvas-confetti";
 function App() {
   const [turn, setTurn] = useState(TURNS.X);
   const [board, setBoard] = useState(Array(9).fill(null));
-
   const [winner, setWinner] = useState(null);
 
-  const checkWinner = (boardToCheck) => {
-    for (const combination of WINNER_COMBINATIONS) {
-      const [a, b, c] = combination;
-      if (
-        boardToCheck[a] &&
-        boardToCheck[a] === boardToCheck[b] &&
-        boardToCheck[a] === boardToCheck[c]
-      ) {
-        return boardToCheck[a];
-      }
-    }
-    return null;
+  const resetGame = () => {
+    setTurn(TURNS.X);
+    setBoard(Array(9).fill(null));
+    setWinner(null);
   };
 
   const updateBoard = (index) => {
@@ -54,24 +28,21 @@ function App() {
     setTurn(newTurn);
 
     const newWinner = checkWinner(newBoard);
-    if (newWinner) setWinner(newWinner);
+    if (newWinner) {
+      confetti();
+      setWinner(newWinner);
+    } else if (checkEndGame(newBoard)) {
+      setWinner(false);
+    }
   };
 
   return (
     <main className="board">
+      <button onClick={resetGame}>Restart</button>
       <h1>Tic tac toe</h1>
-
-      <section className="game">
-        {board.map((cell, index) => (
-          <Square key={index} index={index} updateBoard={updateBoard}>
-            {cell}
-          </Square>
-        ))}
-      </section>
-      <section className="turn">
-        <Square isSelected={turn === TURNS.X}>{TURNS.X}</Square>
-        <Square isSelected={turn === TURNS.O}>{TURNS.O}</Square>
-      </section>
+      <GameBoard board={board} updateBoard={updateBoard} />
+      <TurnDisplay turn={turn} />
+      <WinnerModal winner={winner} resetGame={resetGame} />
     </main>
   );
 }

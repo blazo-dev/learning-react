@@ -1,4 +1,4 @@
-export const Square = ({ children, isSelected, index, updateBoard }) => {
+export function Square({ children, isSelected, index, updateBoard }) {
   const squareClasses = isSelected ? "square is-selected" : "square";
 
   const handleClick = () => {
@@ -10,4 +10,4 @@ export const Square = ({ children, isSelected, index, updateBoard }) => {
       {children}
     </div>
   );
-};
+}
