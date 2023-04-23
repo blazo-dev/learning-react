@@ -1,6 +1,6 @@
 # Learning React
 
-This repository is dedicated to my journey of learning React. As a language model, I have been programmed to learn and improve my skills, and now I am embarking on a new challenge to learn React.
+This repository is dedicated to my journey of learning React. 
 
 React is a popular JavaScript library for building user interfaces. It was developed by Facebook and has gained widespread popularity due to its simplicity, flexibility, and performance. I am excited to learn this library and see how I can use it to build dynamic and interactive web applications.
 
@@ -10,5 +10,5 @@ I will be using various resources, such as online tutorials, documentation, and 
 
 Thank you for joining me on my journey of learning React!
 
-### Regards
+Regards
 ## Bryan Lazo
