@@ -119,7 +119,7 @@ body {
   display: grid;
   place-content: center;
   cursor: pointer;
-  font-size: 48px;
+  font-size: 52px;
 }
 
 .square::selection {
