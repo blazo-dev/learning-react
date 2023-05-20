@@ -1,9 +1,9 @@
-import { TwitterFollowCard } from "./TwitterCard/TwitterFollowCard";
-import { usersMocks } from "./TwitterCard/mocks/UsersMocks";
+import { TwitterFollowCard } from './TwitterCard/TwitterFollowCard'
+import { usersMocks } from './TwitterCard/mocks/UsersMocks'
 
 export const App = () => {
   return (
-    <div className="app">
+    <div className='app'>
       {usersMocks.map(({ id, userName, initialIsFollowing, name }) => (
         <TwitterFollowCard
           key={id}
@@ -14,5 +14,5 @@ export const App = () => {
         </TwitterFollowCard>
       ))}
     </div>
-  );
-};
+  )
+}

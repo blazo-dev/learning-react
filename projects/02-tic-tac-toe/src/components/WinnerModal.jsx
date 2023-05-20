@@ -1,18 +1,20 @@
-import { Square } from "./Square.jsx";
+import { Square } from './Square.jsx'
 
 export const WinnerModal = ({ winner, resetGame }) => {
-  if (winner === null) return null;
+  if (winner === null) return null
 
   const winnerText =
-    winner === false ? (
-      <span>It's a draw!</span>
-    ) : (
-      <span>There is a winner!</span>
-    );
+    winner === false
+      ? (
+        <span>It's a draw!</span>
+        )
+      : (
+        <span>There is a winner!</span>
+        )
 
   return (
-    <section className="winner">
-      <div className="text">
+    <section className='winner'>
+      <div className='text'>
         <h2>{winnerText}</h2>
         {winner && <Square isSelected>{winner}</Square>}
         <footer>
@@ -20,5 +22,5 @@ export const WinnerModal = ({ winner, resetGame }) => {
         </footer>
       </div>
     </section>
-  );
-};
+  )
+}

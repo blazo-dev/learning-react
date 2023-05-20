@@ -1,12 +1,12 @@
 export const saveTurnInStorage = (turn) => {
-  localStorage.setItem("turn", turn);
-};
+  window.localStorage.setItem('turn', turn)
+}
 
 export const saveBoardInStorage = (board) => {
-  localStorage.setItem("board", board);
-};
+  window.localStorage.setItem('board', board)
+}
 
 export const clearGameStorage = () => {
-  localStorage.removeItem("board");
-  localStorage.removeItem("turn");
-};
+  window.localStorage.removeItem('board')
+  window.localStorage.removeItem('turn')
+}
