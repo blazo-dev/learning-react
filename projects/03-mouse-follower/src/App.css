@@ -1,0 +1,5 @@
+#root {
+  width: min(100% - 2rem, 1280px);
+  margin-inline: auto;
+  padding: 2rem;
+}
