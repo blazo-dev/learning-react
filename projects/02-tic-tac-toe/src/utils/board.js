@@ -1,4 +1,4 @@
-import { WINNER_COMBINATIONS } from "../constans.js";
+import { WINNER_COMBINATIONS } from "./constans.js";
 
 export const checkWinner = (boardToCheck) => {
   for (const combination of WINNER_COMBINATIONS) {

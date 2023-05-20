@@ -1,4 +1,4 @@
-import { TURNS } from "../constans.js";
+import { TURNS } from "../utils/constans.js";
 import { Square } from "./Square.jsx";
 
 export function TurnDisplay({ turn }) {
