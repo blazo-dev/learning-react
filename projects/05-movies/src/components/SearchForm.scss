@@ -1,0 +1,20 @@
+.form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+
+  &__label {
+    display: grid;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  &__label,
+  &__input,
+  &__button {
+    margin: 0;
+  }
+
+}

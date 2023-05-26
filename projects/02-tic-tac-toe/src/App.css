@@ -1,0 +1,9 @@
+#root {
+  min-height: 100vh;
+  width: min(100% - 2rem, 1280px);
+
+  margin-inline: auto;
+  padding: 2rem;
+
+  text-align: center;
+}

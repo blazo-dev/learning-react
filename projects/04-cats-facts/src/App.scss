@@ -1,0 +1,27 @@
+.main {
+  width: min(100% - 2rem, 800px);
+  margin-inline: auto;
+}
+
+.card {
+  display: grid;
+  gap: 1em;
+  padding: 1em;
+  place-items: center;
+
+  border-radius: 0.3em;
+  background-color: #6d76fa;
+
+  &__description {
+    margin-block: 0;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f5f5f5;
+  }
+
+  &__image {
+    display: block;
+    width: min(100%, 250px);
+  }
+}
