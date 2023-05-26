@@ -1,0 +1,28 @@
+.card {
+  display: grid;
+  gap: 0.5em;
+
+  width: min(100%, 300px);
+  height: 100%;
+
+  padding: 1em;
+
+  border-radius: 0.3em;
+  background-color: #1a242f;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 0.3em;
+
+    text-align: center;
+
+    margin: 0;
+  }
+
+  &__image {
+    display: block;
+    border-radius: 0.3em;
+  }
+}

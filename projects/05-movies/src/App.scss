@@ -1,0 +1,23 @@
+.header {
+  display: grid;
+  gap: 1em;
+
+  &__title {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  place-items: center;
+
+  padding-block: 1em;
+
+  &__error {
+    font-size: 1.5rem;
+  }
+}
