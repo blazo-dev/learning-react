@@ -11,4 +11,4 @@ Este proyecto es una prueba técnica de React que consiste en la creación de un
 
 ## Despliegue
 
-Este proyecto está desplegado en [blazo-ecommerce.netlify.app](blazo-ecommerce.netlify.app). Puedes acceder a la versión en producción para probar y explorar la aplicación.
+Este proyecto está desplegado en [https://blazo-ecommerce.netlify.app](blazo-ecommerce.netlify.app). Puedes acceder a la versión en producción para probar y explorar la aplicación.
