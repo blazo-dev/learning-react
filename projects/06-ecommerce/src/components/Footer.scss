@@ -1,0 +1,73 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  z-index: 100;
+  padding: 0.5em 1.5em;
+
+  text-align: left;
+  font-size: 0.9rem;
+
+  border-radius: 1em;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  opacity: 0.95;
+
+  transition: transform 0.3s ease-in-out;
+
+  &-hidden {
+    transform: translateY(120%);
+  }
+
+  &-username {
+    font-size: 0.8em;
+    color: #09f;
+    opacity: 0.8;
+  }
+
+  &-title,
+  &-description {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+  }
+
+  &-title {
+    font-weight: 500;
+  }
+
+  &-description {
+    font-weight: 400;
+  }
+
+  &-button {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 0;
+
+    border: none;
+    border-radius: 50% 50% 0 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    opacity: 0.95;
+
+    transition: font-size 0.2s ease-in-out;
+
+    &:hover {
+      font-size: 1.2rem;
+    }
+  }
+
+  &-action {
+    position: absolute;
+    bottom: 100%;
+    left: 1em;
+    z-index: 50;
+  }
+}

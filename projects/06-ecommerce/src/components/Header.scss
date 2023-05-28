@@ -1,0 +1,16 @@
+.header {
+  & .wrapper {
+    display: grid;
+    gap: 1em;
+    padding-block: 1em;
+  }
+
+  &-title {
+    text-align: center;
+    margin-block: 0;
+  }
+
+  &-content {
+    position: relative;
+  }
+}
