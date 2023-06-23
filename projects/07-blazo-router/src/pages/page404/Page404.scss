@@ -1,0 +1,10 @@
+.not-found {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1em;
+
+  &-title {
+    font-size: 4rem;
+  }
+}

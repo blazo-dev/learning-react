@@ -1,0 +1,49 @@
+.about {
+  display: grid;
+  align-content: start;
+  justify-items: left;
+  gap: 1em;
+
+  padding-block: 2em;
+
+  &-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  &-article {
+    display: grid;
+    gap: 1em;
+
+    width: 100%;
+
+    text-align: center;
+
+    &-title {
+      font-weight: 500;
+    }
+  }
+
+  &-wrapper {
+    display: grid;
+    gap: 0.1em;
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    &-item {
+      display: grid;
+      place-items: center;
+    }
+  }
+}
